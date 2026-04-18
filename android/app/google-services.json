@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1078228100590",
+    "project_id": "barbar-luxe-cuts-yk-2026",
+    "storage_bucket": "barbar-luxe-cuts-yk-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078228100590:android:cdac83aa0d230399ca9aff",
+        "android_client_info": {
+          "package_name": "com.luxecuts.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_QJItf3j_tUOQyz9jOctBx0kpAhfuz08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

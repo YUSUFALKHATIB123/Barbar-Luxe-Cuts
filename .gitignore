@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Android SDK path (محلي لكل جهاز)
+android/local.properties
+
+# Android / Gradle builds (حجم كبير — يُعاد توليدها محلياً)
+android/**/build/
+android/.gradle/
+android/captures/
+*.apk
+*.aab
+
+# iOS (اختياري — إن لم تكن تريد تتبع Pods)
+ios/App/Pods/
+ios/**/DerivedData/
+
+# بيئة محلية
+.env
+.env.*
+!.env.example

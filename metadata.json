@@ -1,0 +1,9 @@
+
+{
+  "name": "Luxe Cuts - Premium Grooming",
+  "description": "Unified Barber Booking and Admin Platform",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

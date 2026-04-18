@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Luxe Cuts</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#D4AF37",
+                        "background-dark": "#050505",
+                        "surface-dark": "#121212",
+                    },
+                    fontFamily: {
+                        serif: ["Playfair Display", "serif"],
+                        sans: ["Cairo", "sans-serif"],
+                        latin: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: white;
+            -webkit-font-smoothing: antialiased;
+            overflow: hidden;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .gold-gradient {
+            background: linear-gradient(90deg, #C5A048 0%, #E6C163 50%, #B6913D 100%);
+        }
+
+        .slide-up-card {
+            animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        /* انتقال عام ناعم بين الشاشات */
+        @keyframes appScreenEnter {
+            from {
+                opacity: 0;
+                transform: translateY(10px) scale(0.995);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .app-screen-enter {
+            animation: appScreenEnter 380ms cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: transform, opacity;
+        }
+
+        .dash-line {
+            background-image: linear-gradient(to right, #000 40%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 8px 1px;
+            background-repeat: repeat-x;
+        }
+
+        /* أنميشن المقص */
+        @keyframes cut-snip {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-20deg); }
+        }
+        .animate-cut { animation: cut-snip 0.4s ease-in-out infinite; }
+
+        /* شريط التقدم في السبلاش */
+        @keyframes progressFill {
+            from { width: 0%; }
+            to { width: 64%; }
+        }
+        .splash-progress-bar {
+            animation: progressFill 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* ظهور النوافذ المنبثقة */
+        @keyframes modalEnter {
+            from {
+                opacity: 0;
+                transform: translateY(24px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @keyframes overlayFade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .modal-overlay-enter {
+            animation: overlayFade 0.25s ease-out forwards;
+        }
+        .modal-content-enter {
+            animation: modalEnter 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* محتوى التبويبات */
+        @keyframes tabContentIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .tab-content-enter {
+            animation: tabContentIn 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* ظهور عناصر القائمة بتتابع */
+        .stagger-item {
+            opacity: 0;
+            animation: tabContentIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* انتقال سلس للشاشات */
+        .screen-enter {
+            animation: appScreenEnter 400ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* Shimmer effect for buttons */
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+
+        input:focus { outline: none; ring: 0; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
