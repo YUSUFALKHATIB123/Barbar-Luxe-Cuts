@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 import { firebase } from '../services/FirebaseMock';
 
 interface Props {

@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { firebase } from '../services/FirebaseMock';
 import { Booking, AvailabilityStatus, WorkingHours, CustomerNote, BarberService } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 import BookingCountdown from '../components/BookingCountdown';
 
 const RESCHEDULE_TIME_SLOTS = [

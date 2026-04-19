@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 const OnboardingScreen: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const { t, language } = useApp();

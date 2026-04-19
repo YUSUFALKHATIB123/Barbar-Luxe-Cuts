@@ -2,7 +2,7 @@
 import React from 'react';
 import { CalendarService } from '../services/CalendarService';
 import { Booking } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 interface Props {
   onFinish: () => void;

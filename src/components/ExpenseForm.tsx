@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { FinancialRecord } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 interface ExpenseFormProps {
   onClose: () => void;

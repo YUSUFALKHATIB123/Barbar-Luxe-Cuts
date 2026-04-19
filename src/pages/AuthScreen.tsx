@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { firebase } from '../services/FirebaseMock';
 import { User } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 interface Props {
   onLogin: (u: Partial<User>) => void;

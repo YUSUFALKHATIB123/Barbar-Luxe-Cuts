@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { firebase } from '../services/FirebaseMock';
 import { Booking, FinancialRecord, BranchService, User } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 import ExpenseForm from '../components/ExpenseForm';
 import BookingCountdown from '../components/BookingCountdown';
 

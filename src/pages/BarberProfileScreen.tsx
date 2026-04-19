@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 import { firebase } from '../services/FirebaseMock';
 import { Booking } from '../types';
 

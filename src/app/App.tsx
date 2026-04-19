@@ -1,20 +1,20 @@
 
 import React, { useState, useEffect, createContext, useContext } from 'react';
-import { Screen, User } from './types';
-import SplashScreen from './pages/SplashScreen';
-import OnboardingScreen from './pages/OnboardingScreen';
-import AuthScreen from './pages/AuthScreen';
-import ProfileSetup from './pages/ProfileSetup';
-import HomeScreen from './pages/HomeScreen';
-import BarberProfileScreen from './pages/BarberProfileScreen';
-import PaymentScreen from './pages/PaymentScreen';
-import ConfirmationScreen from './pages/ConfirmationScreen';
-import SettingsScreen from './pages/SettingsScreen';
-import BarberDashboard from './pages/BarberDashboard';
-import BranchManagerDashboard from './pages/BranchManagerDashboard';
-import BookingHistory from './pages/BookingHistory';
-import { translations } from './translations';
-import { NotificationService } from './services/NotificationService';
+import { Screen, User } from '../types';
+import SplashScreen from '../pages/SplashScreen';
+import OnboardingScreen from '../pages/OnboardingScreen';
+import AuthScreen from '../pages/AuthScreen';
+import ProfileSetup from '../pages/ProfileSetup';
+import HomeScreen from '../pages/HomeScreen';
+import BarberProfileScreen from '../pages/BarberProfileScreen';
+import PaymentScreen from '../pages/PaymentScreen';
+import ConfirmationScreen from '../pages/ConfirmationScreen';
+import SettingsScreen from '../pages/SettingsScreen';
+import BarberDashboard from '../pages/BarberDashboard';
+import BranchManagerDashboard from '../pages/BranchManagerDashboard';
+import BookingHistory from '../pages/BookingHistory';
+import { translations } from '../locales/translations';
+import { NotificationService } from '../services/NotificationService';
 
 interface AppState {
   user: User | null;

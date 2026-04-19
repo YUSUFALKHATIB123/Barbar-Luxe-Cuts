@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { firebase } from '../services/FirebaseMock';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 const PaymentScreen: React.FC<{ booking: any, onBack: () => void, onDone: (createdBooking?: any) => void }> = ({ booking, onBack, onDone }) => {
   const { user, t } = useApp();

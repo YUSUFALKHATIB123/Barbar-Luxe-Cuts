@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useId } from 'react';
 import { Booking } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 /** Parse booking date string (ISO YYYY-MM-DD or legacy "اليوم 18" / "Today 18") to Date at start of day. */
 function parseBookingDate(dateStr: string): Date | null {

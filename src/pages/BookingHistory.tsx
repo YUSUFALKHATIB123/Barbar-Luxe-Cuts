@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { firebase } from '../services/FirebaseMock';
 import { Booking } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 const BookingHistory: React.FC<{ onBack: () => void }> = ({ onBack }) => {
   const { user } = useApp();

@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { firebase } from '../services/FirebaseMock';
 import { User } from '../types';
-import { useApp } from '../App';
+import { useApp } from '../app/App';
 
 const ProfileSetup: React.FC<{ initialData: any, onDone: (u: User) => void }> = ({ initialData, onDone }) => {
   const { t, language } = useApp();
